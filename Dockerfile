@@ -9,3 +9,4 @@ COPY . .
 ENV NODE_ENV=production
 RUN npm run build --if-present
 RUN npm prune --omit=dev
+CMD [ "npm", "run", "start" ]
